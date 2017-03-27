@@ -9,7 +9,7 @@ import SignUpForm from './User/user.jsx';
 import Login from './Login';
 import Home from './Home';
 import createListing from './CreateListing';
-import Account from './User/accountInfo.jsx';
+// import Account from './User/accountInfo.jsx';
 
 
 const App = React.createClass({
@@ -19,13 +19,12 @@ const App = React.createClass({
 			
 			<Link to='/'><img className='logo' src={require('../images/nycbnb_logo.png')} /></Link>
 			
-			  <Link className= "NavLink" to="createListing">Become a Host</Link>
+			  <Link className= "NavLink" to="/createlisting">Become a Host</Link>
 
-	          <Link className ="NavLink" to='SignUpForm'>Sign Up</Link>
+	          <Link className ="NavLink" to='/signUpForm'>Sign Up</Link>
 	          
-	          <Link className ="NavLink" to='Login'>Log In</Link>
+	          <Link className ="NavLink" to='/login'>Log In</Link>
 
-               <Link to='Account'>Account</Link>
 
 
 	        <br />
@@ -40,3 +39,4 @@ const App = React.createClass({
 
 export default App;
 			
+               // <Link to='Account'>Account</Link>
